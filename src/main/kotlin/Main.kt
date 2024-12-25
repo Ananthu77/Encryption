@@ -1,5 +1,9 @@
-package org.crypt
-
 fun main() {
-    println("Hello World!")
+
+    val encodedString = CryptLibrary().encryptPlainText("Sample string for encryption!")
+    println("Encrypted String: $encodedString")
+
+    val decodedString = CryptLibrary().decryptCipherText(encodedString)
+    println("Decrypted String: $decodedString")
+
 }
